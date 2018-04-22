@@ -1,0 +1,68 @@
+@import "bootstrap";
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab|Open+Sans:400italic,700italic,400,700);
+@import url(https://fonts.googleapis.com/css?family=Droid+Sans);
+
+
+body{
+  padding-top: 20px;
+  //https://www.pexels.com/photo/carrots-food-fresh-freshness-616404/
+  background-image: url("https://images.pexels.com/photos/616404/pexels-photo-616404.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% auto;
+  background-position: bottom
+}
+
+.mystyle{
+  font-family: "Droid Sans";
+}
+
+.mystyle h1{
+  font-size: 150px;
+  text-align: center;
+  font-weight: 1000;
+  margin: 50px;
+  text-shadow: 4px 4px 8px rgba(0,0,0,.5)
+}
+
+.mystyle h2{
+  font-size:80px;
+  text-align: center;
+  margin: 50px;
+}
+
+
+.button{
+  background-color: green;
+  font-family: "Droid Sans";
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 50px;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  border: 2px solid green;
+}
+
+.navbar-default{
+  background-color: rgba(0,0,0,0);
+  border: white;
+  font-family: "Droid Sans";
+}
+
+.navbar-default .navbar-brand{
+  color: black;
+  font-size:30px;
+  font-weight: 300;
+  text-shadow: 2px 2px 4px rgba(0,0,0,.5)
+}
+
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus{
+  background-color: rgba(0,0,0,0);
+  color: black;
+  font-size:30px;
+  font-weight: 300;
+  text-shadow: 2px 2px 4px rgba(0,0,0,.5)
+
+}
