@@ -35,13 +35,17 @@ body{
 .button{
   background-color: green;
   font-family: "Droid Sans";
-  color: white;
+  color:  #d9d9d9;
   padding: 15px 32px;
   text-align: center;
   font-size: 50px;
   border-radius: 8px;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   border: 2px solid green;
+}
+.button:hover{
+  color: white;
+  text-decoration: none;
 }
 
 .navbar-default{
@@ -55,6 +59,16 @@ body{
   font-size:30px;
   font-weight: 300;
   text-shadow: 2px 2px 4px rgba(0,0,0,.5)
+}
+
+.navbar-default .navbar-nav > li > a{
+
+  background-color: rgba(0,0,0,0);
+  color: black;
+  font-size:30px;
+  font-weight: 300;
+  text-shadow: 2px 2px 4px rgba(0,0,0,.5)
+
 }
 
 
