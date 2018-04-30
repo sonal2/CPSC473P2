@@ -1,0 +1,17 @@
+<div> {{input type="text" value=foodName class="form-control" placeholder="Food Name" autofocus="autofocus"}}
+  <br />
+    <select name="role" class="form-control" onchange={{action "updateValue" value="target.value"}}>
+      <option value="Meat">Meat</option>
+      <option value="Fruit">Fruit</option>
+      <option value="Grain">Grain</option>
+      <option value="Vegetables">Vegetables</option>
+      <option value="Dairy">Dairy</option>
+   </select>
+   <br />
+
+</div>
+<button class="btn btn-primary btn-lg btn-block" {{action 'saveFood'}} disabled={{isDisabled}}>Input Ingredient</button>
+
+{{#if responseMessage}}
+<div class="alert alert-success">{{responseMessage}}</div>
+{{/if}}

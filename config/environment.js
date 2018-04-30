@@ -6,6 +6,14 @@ module.exports = function(environment) {
     environment,
     rootURL: '/',
     locationType: 'auto',
+    firebase: {
+       apiKey: "AIzaSyBeHg2rK7EdpVdV-gkX3EQoNJJR40Blmjo",
+       authDomain: "recipes-132cc.firebaseapp.com",
+       databaseURL: "https://recipes-132cc.firebaseio.com",
+       projectId: "recipes-132cc",
+       storageBucket: "recipes-132cc.appspot.com",
+       messagingSenderId: "317431192382", 
+    },
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
@@ -24,7 +32,10 @@ module.exports = function(environment) {
     // Set or update content security policies
     contentSecurityPolicy: {
       'font-src': "'self' fonts.gstatic.com",
-      'style-src': "'self' fonts.googleapis.com"
+      'style-src': "'self' fonts.googleapis.com",
+      'script-src': "'self' 'unsafe-eval' apis.google.com",
+      'frame-src': "'self' https://*.firebaseapp.com",
+      'connect-src': "'self' wss://*.firebaseio.com https://*.googleapis.com"
     },
 
     APP: {

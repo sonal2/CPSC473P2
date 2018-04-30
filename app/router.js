@@ -8,6 +8,12 @@ const Router = EmberRouter.extend({
 
 Router.map(function() {
   this.route('recipes');
+
+  this.route('firebase', function() {});
+
+  this.route('base', function() {
+    this.route('ingredients');
+  });
 });
 
 export default Router;

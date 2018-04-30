@@ -1,1 +1,18 @@
-{{outlet}}
+<table class="table table-bordered table-striped">
+  <thead>
+      <tr>
+        <th>ID</th>
+        <th>Ingredient</th>
+        <th>Food Group</th>
+      </tr>
+  </thead>
+  <tbody>
+    {{#each model as |food|}}
+    <tr>
+    <th>{{food.id}}</th>
+    <td>{{food.ingredient}}</td>
+    <td>{{food.foodGroup}}</td>
+  </tr>
+  {{/each}}
+</tbody>
+</table>
