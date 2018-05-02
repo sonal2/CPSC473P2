@@ -1,18 +1,51 @@
 <table class="table table-bordered table-striped">
   <thead>
-      <tr>
-        <th>ID</th>
-        <th>Ingredient</th>
-        <th>Food Group</th>
-      </tr>
+    <tr>
+      <th>ID</th>
+      <th>Ingredient</th>
+      <th>Food Group</th>
+    </tr>
   </thead>
   <tbody>
-    {{#each model as |food|}}
-    <tr>
-    <th>{{food.id}}</th>
-    <td>{{food.ingredient}}</td>
-    <td>{{food.foodGroup}}</td>
-  </tr>
-  {{/each}}
-</tbody>
+    <tr><th>Meats</th></tr>
+    {{#each model.meats as |food|}}
+      <tr>
+        <th>{{food.id}}</th>
+        <td>{{food.ingredient}}</td>
+        <td>{{food.foodGroup}}</td>
+      </tr>
+    {{/each}}
+    <tr><th>Fruits</th></tr>
+    {{#each model.fruit as |food|}}
+      <tr>
+        <th>{{food.id}}</th>
+        <td>{{food.ingredient}}</td>
+        <td>{{food.foodGroup}}</td>
+      </tr>
+    {{/each}}
+    <tr><th>Grain</th></tr>
+    {{#each model.grain as |food|}}
+      <tr>
+        <th>{{food.id}}</th>
+        <td>{{food.ingredient}}</td>
+        <td>{{food.foodGroup}}</td>
+      </tr>
+    {{/each}}
+    <tr><th>Vegetables</th></tr>
+    {{#each model.veggies as |food|}}
+      <tr>
+        <th>{{food.id}}</th>
+        <td>{{food.ingredient}}</td>
+        <td>{{food.foodGroup}}</td>
+      </tr>
+    {{/each}}
+    <tr><th>Dairy</th></tr>
+    {{#each model.dairy as |food|}}
+      <tr>
+        <th>{{food.id}}</th>
+        <td>{{food.ingredient}}</td>
+        <td>{{food.foodGroup}}</td>
+      </tr>
+    {{/each}}
+  </tbody>
 </table>

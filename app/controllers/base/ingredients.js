@@ -1,5 +1,6 @@
 import Controller from '@ember/controller';
-import { match, not , and } from '@ember/object/computed';
+import { match, not } from '@ember/object/computed';
+import $ from 'jquery';
 
 export default Controller.extend({
   responseMessage: '',
@@ -12,12 +13,15 @@ export default Controller.extend({
   actions: {
     updateValue: function(value) {
       this.set('foodGroup', value);
-      console.log(value);
     },
 
     saveFood() {
       const ingredient = this.get('foodName');
-      const group = this.get('foodGroup');
+      let group = this.get('foodGroup');
+
+      if(group == '') {
+        group = $('#food-group').find(":selected").text();
+      }
 
       const newIngredient = this.store.createRecord('ingredient', {
         ingredient: ingredient,
@@ -26,7 +30,7 @@ export default Controller.extend({
 
       newIngredient.save();
       this.set('responseMessage',
-          `Saved ${this.get('foodName')} group: ${this.get('foodGroup')} `);
+          `Saved ${this.get('foodName')} group: ` + group);
       this.set('foodName', '');
       this.set('foodGroup', '');
     }
