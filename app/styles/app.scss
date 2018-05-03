@@ -1,4 +1,5 @@
 @import "bootstrap";
+
 @import url(http://fonts.googleapis.com/css?family=Roboto+Slab|Open+Sans:400italic,700italic,400,700);
 @import url(https://fonts.googleapis.com/css?family=Droid+Sans);
 
@@ -9,7 +10,7 @@ body{
   background-image: url("https://images.pexels.com/photos/616404/pexels-photo-616404.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: 100% auto;
+  background-size: cover;
   background-position: bottom
 }
 
@@ -19,6 +20,7 @@ body{
 
 .mystyle h1{
   font-size: 150px;
+  color: black;
   text-align: center;
   font-weight: 1000;
   margin: 50px;
@@ -80,3 +82,5 @@ body{
   text-shadow: 2px 2px 4px rgba(0,0,0,.5)
 
 }
+
+@import "mystyle.scss";
